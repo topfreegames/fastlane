@@ -59,7 +59,9 @@ module Spaceship
 
       ESSENTIAL_INCLUDES = [
         "appStoreVersions",
-        "prices"
+# due to https://github.com/fastlane/fastlane/issues/21125
+# we need to override this file
+#        "prices"
       ].join(",")
 
       def self.type
